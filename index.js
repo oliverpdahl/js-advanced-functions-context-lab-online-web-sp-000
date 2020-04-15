@@ -35,5 +35,5 @@ let createEmployeeRecord = function (array) {
 
 //this === array
 let createEmployeeRecords = function (array) {
-  return array.map(m => m.createEmployeeRecord)
+  return array.map(m => createEmployeeRecord(m))
 }
