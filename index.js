@@ -20,3 +20,19 @@ let allWagesFor = function () {
 
     return payable
 }
+
+let createEmployeeRecord = function (array) {
+  const [firstName, familyName, title, payPerHour] = array
+  return {
+    firstName: firstName,
+    familyName: familyName,
+    title: title,
+    payPerHour: payPerHour,
+    timeInEvents: [],
+    timeOutEvents: []
+  }
+}
+
+let createEmployeeRecords = function (array) {
+
+}
