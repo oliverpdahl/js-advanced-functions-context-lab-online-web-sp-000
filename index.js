@@ -57,3 +57,11 @@ let createTimeOutEvent = function(dateTime){
   this.timeOutEvents.push(createTimeEvent.call({dateTime, type: "TimeOut"}))
   return this
 }
+
+let findHour = function(date) {
+  return this.find(m => m.date === date).hour
+}
+
+let hoursWorkedOnDate = function(date){
+  return findHour.call(this.timeOutEvents, date) - findHour.call(this.timeInEvents, date)
+}
