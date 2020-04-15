@@ -38,6 +38,15 @@ let createEmployeeRecords = function (array) {
   return array.map(m => createEmployeeRecord(m))
 }
 
+let createTimeEvent = function(){
+  const [date, hour] = this.dateTime.split(' ')
+  const timeInObject = {
+    type: this.type,
+    hour: parseInt(hour, 10),
+    date: date
+  }
+}
+
 let createTimeInEvent = function(dateTime){
   const [date, hour] = dateTime.split(' ')
   const timeInObject = {
