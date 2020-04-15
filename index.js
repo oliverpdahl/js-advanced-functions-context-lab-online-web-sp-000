@@ -42,7 +42,7 @@ function dateArray(date){
   return dat.split(' ')
 }
 
-let createTimeInEvent(date){
+function createTimeInEvent(date){
   timeInObject = {
     type: "TimeIn",
     hour: dateArray(date)[1]
