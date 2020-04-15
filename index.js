@@ -55,4 +55,5 @@ let createTimeInEvent = function(dateTime){
 
 let createTimeOutEvent = function(dateTime){
   this.timeOutEvents.push(createTimeEvent.call({dateTime, type: "TimeOut"}))
+  return this
 }
