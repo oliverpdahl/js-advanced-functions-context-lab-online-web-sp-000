@@ -42,7 +42,7 @@ function dateArray(date){
   return dat.split(' ')
 }
 
-function createTimeInEvent(date){
+function createTimeInEvent(employee, date){
   timeInObject = {
     type: "TimeIn",
     hour: dateArray(date)[1],
