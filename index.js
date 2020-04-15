@@ -34,5 +34,5 @@ let createEmployeeRecord = function (array) {
 }
 
 let createEmployeeRecords = function (array) {
-
+  return array.map(m => createEmployeeRecord.call(this))
 }
