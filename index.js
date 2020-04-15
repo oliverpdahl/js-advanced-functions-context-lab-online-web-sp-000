@@ -42,8 +42,8 @@ function createTimeInEvent(dateTime){
   const [date, hour] = dateTime.split(' ')
   timeInObject = {
     type: "TimeIn",
-    hour: dateArray(date)[1],
-    date: dateArray(date)[0]
+    hour: parseInt(hour, 10),
+    date: date;
   }
   this.timeInEvents.push(timeInObject)
 }
