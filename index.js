@@ -49,6 +49,6 @@ let createTimeEvent = function(){
 }
 
 let createTimeInEvent = function(dateTime){
-  this.timeInEvents.push(createTimeEvent.call({dateTime: dateTime, type: "TimeIn"}))
+  this.timeInEvents.push(createTimeEvent.call({dateTime, type: "TimeIn"}))
   return this
 }
