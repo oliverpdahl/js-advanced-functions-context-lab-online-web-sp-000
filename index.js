@@ -69,3 +69,7 @@ let hoursWorkedOnDate = function(date){
 let wagesEarnedOnDate = function(date){
   return hoursWorkedOnDate.call(this, date) * this.payPerHour
 }
+
+let calculatePayroll = function(){
+  this.map(e => allWagesFor.call(e))
+}
