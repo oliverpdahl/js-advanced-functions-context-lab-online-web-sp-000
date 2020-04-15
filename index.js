@@ -37,3 +37,16 @@ let createEmployeeRecord = function (array) {
 let createEmployeeRecords = function (array) {
   return array.map(m => createEmployeeRecord(m))
 }
+
+let dateArray(date){
+  return dat.split(' ')
+}
+
+let createTimeInEvent(employee, date){
+  timeInObject = {
+    type: "TimeIn",
+    hour: dateArray(date)[1]
+    date: dateArray(date)[0]
+  }
+  this.timeInEvents.push(timeInObject)
+}
