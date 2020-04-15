@@ -71,7 +71,7 @@ let wagesEarnedOnDate = function(date){
 }
 
 let findEmployeeByFirstName = function(array, firstName) {
-  return array.find(e => {e.firstName === firstName})
+  return array.find(e => e.firstName === firstName)
 }
 
 let calculatePayroll = function(){
