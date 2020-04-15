@@ -71,5 +71,5 @@ let wagesEarnedOnDate = function(date){
 }
 
 let calculatePayroll = function(){
-  this.map(e => allWagesFor.call(e))
+  this.map(e => allWagesFor.call(e)).reduce((t, e) => t + e)
 }
