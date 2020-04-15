@@ -45,7 +45,7 @@ function dateArray(date){
 function createTimeInEvent(date){
   timeInObject = {
     type: "TimeIn",
-    hour: dateArray(date)[1]
+    hour: dateArray(date)[1],
     date: dateArray(date)[0]
   }
   this.timeInEvents.push(timeInObject)
