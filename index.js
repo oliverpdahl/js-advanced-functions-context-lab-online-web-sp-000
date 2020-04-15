@@ -40,7 +40,7 @@ let createEmployeeRecords = function (array) {
 
 function createTimeInEvent(dateTime){
   const [date, hour] = dateTime.split(' ')
-  timeInObject = {
+  const timeInObject = {
     type: "TimeIn",
     hour: parseInt(hour, 10),
     date: date
