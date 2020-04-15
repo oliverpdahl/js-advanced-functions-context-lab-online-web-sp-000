@@ -63,5 +63,5 @@ let findHour = function(date) {
 }
 
 let hoursWorkedOnDate = function(date){
-  return findHour.call(this.timeOutEvents, date) - findHour.call(this.timeInEvents, date)
+  return (findHour.call(this.timeOutEvents, date) - findHour.call(this.timeInEvents, date))/100
 }
