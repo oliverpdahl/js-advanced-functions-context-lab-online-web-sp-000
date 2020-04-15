@@ -45,15 +45,10 @@ let createTimeEvent = function(){
     hour: parseInt(hour, 10),
     date: date
   }
+  return timeInObject
 }
 
 let createTimeInEvent = function(dateTime){
-  const [date, hour] = dateTime.split(' ')
-  const timeInObject = {
-    type: "TimeIn",
-    hour: parseInt(hour, 10),
-    date: date
-  }
-  this.timeInEvents.push(timeInObject)
+  this.timeInEvents.push(createTimeEvent.call({dateTime: dateTime, type: "TimeIn"}))
   return this
 }
