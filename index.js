@@ -46,4 +46,5 @@ let createTimeInEvent = function(dateTime){
     date: date
   }
   this.timeInEvents.push(timeInObject)
+  return this
 }
