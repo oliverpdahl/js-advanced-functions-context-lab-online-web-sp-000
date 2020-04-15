@@ -43,7 +43,7 @@ function createTimeInEvent(dateTime){
   timeInObject = {
     type: "TimeIn",
     hour: parseInt(hour, 10),
-    date: date;
+    date: date
   }
   this.timeInEvents.push(timeInObject)
 }
